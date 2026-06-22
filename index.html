@@ -1,17 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HolidayMatch</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HolidayMatch</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #fff7f8;
+      color: #3b2f2f;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ffd6e0, #fff1c9);
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d85c8a;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #3b2f2f;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 56px;
+      margin-bottom: 18px;
+      color: #7a3b4c;
+    }
+
+    h2 {
+      font-size: 34px;
+      color: #b94f74;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      color: #7a3b4c;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .subtitle {
+      font-size: 22px;
+      max-width: 750px;
+      margin: 0 auto 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #d85c8a;
+      color: white;
+      padding: 15px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    section {
+      padding: 70px 12%;
+    }
+
+    .white-section {
+      background-color: white;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 8px 25px rgba(216, 92, 138, 0.15);
+    }
+
+    .pink-card {
+      background-color: #fff0f5;
+    }
+
+    .quote {
+      background-color: #ffe3ec;
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 34px;
+      font-style: italic;
+      color: #7a3b4c;
+    }
+
+    .steps {
+      counter-reset: step;
+    }
+
+    .step {
+      background-color: #fff;
+      margin-bottom: 18px;
+      padding: 25px;
+      border-left: 6px solid #d85c8a;
+      border-radius: 15px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+    }
+
+    .safety-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 25px;
+      font-size: 18px;
+    }
+
+    .safety-list div {
+      background-color: white;
+      padding: 18px;
+      border-radius: 18px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+    }
+
+    .testimonial {
+      background-color: white;
+      border-radius: 25px;
+      padding: 35px;
+      font-style: italic;
+      box-shadow: 0 8px 25px rgba(216, 92, 138, 0.15);
+    }
+
+    footer {
+      background-color: #7a3b4c;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    footer h2 {
+      color: white;
+    }
+
+    footer .button {
+      background-color: white;
+      color: #7a3b4c;
+    }
+  </style>
 </head>
+
 <body>
 
+  <nav>
+    <div class="logo">HolidayMatch</div>
+    <div class="nav-links">
+      <a href="#idea">Idea</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#how">How It Works</a>
+      <a href="#safety">Safety</a>
+    </div>
+  </nav>
+
+  <header>
     <h1>Live Your Own Holiday Story</h1>
-
-    <p>
-        Swap homes with another woman around the world and experience a new city like a local.
+    <p class="subtitle">
+      Swap homes with another woman around the world and experience a new city like a local.
+      Inspired by the magic of <em>The Holiday</em>.
     </p>
+    <a href="#cta" class="button">Find Your Holiday Match</a>
+  </header>
 
-    <button>Find Your Holiday Match</button>
+  <section id="idea" class="white-section">
+    <h2>What is HolidayMatch?</h2>
+    <p>
+      HolidayMatch is a women-only home exchange app inspired by the beloved rom-com
+      <em>The Holiday</em>.
+    </p>
+    <p>
+      Browse beautiful homes around the world and swipe to discover your perfect holiday match.
+      Instead of booking hotels or expensive Airbnbs, women can swap homes with each other
+      for the same period of time and experience a destination like a local.
+    </p>
+    <p>
+      But HolidayMatch is more than just a home exchange platform. Imagine waking up in a cozy
+      London cottage, spending Christmas in a sunny California beach house, or escaping your
+      everyday routine for a completely new environment.
+    </p>
+    <p>
+      It is not just about travel. It is about stepping into someone else's world, taking a break
+      from your routine, and creating the kind of memories that feel straight out of a movie.
+    </p>
+    <p>
+      Every home and member is verified, creating a trusted women-only community where women can
+      travel safely, affordably, and authentically. Because sometimes all you need is a change of
+      scenery to start your own holiday story.
+    </p>
+  </section>
+
+  <section id="benefits">
+    <h2>Why You'll Love It</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Travel More Affordably</h3>
+        <p>Skip expensive accommodation costs and use your home to unlock new travel experiences.</p>
+      </div>
+      <div class="card">
+        <h3>Live Like a Local</h3>
+        <p>Experience destinations from a local perspective instead of staying in tourist areas.</p>
+      </div>
+      <div class="card">
+        <h3>Feel Safe</h3>
+        <p>Every member is identity verified and reviewed by the community.</p>
+      </div>
+      <div class="card">
+        <h3>Meet Like-Minded Women</h3>
+        <p>Connect with adventurous women who share your passion for travel and cultural exchange.</p>
+      </div>
+      <div class="card">
+        <h3>Create Your Own Holiday Moment</h3>
+        <p>Sometimes all you need is a change of scenery to discover something new about yourself.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="white-section">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Create Your Profile</h3>
+        <p>Upload your home, verify your identity, and tell us about yourself.</p>
+      </div>
+      <div class="step">
+        <h3>2. Find Your Match</h3>
+        <p>Swipe through beautiful homes around the world and find your perfect exchange.</p>
+      </div>
+      <div class="step">
+        <h3>3. Swap Homes</h3>
+        <p>When both members agree, it's a match.</p>
+      </div>
+      <div class="step">
+        <h3>4. Start Your Adventure</h3>
+        <p>Pack your suitcase and experience a destination like never before.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="safety">
+    <h2>Designed for Women, Built on Trust</h2>
+    <p>Your safety comes first.</p>
+    <div class="safety-list">
+      <div>✔ ID Verification</div>
+      <div>✔ Selfie Verification</div>
+      <div>✔ Secure Messaging</div>
+      <div>✔ Community Reviews</div>
+      <div>✔ Women-Only Membership</div>
+      <div>✔ Customer Support</div>
+    </div>
+  </section>
+
+  <div class="quote">
+    “Hotels give you a room. HolidayMatch gives you a story.”
+  </div>
+
+  <section class="white-section">
+    <h2>What Our Members Say</h2>
+    <div class="testimonial">
+      “I spent two weeks in Amsterdam while hosting another traveler in Cologne.
+      It felt like living in a movie.”
+    </div>
+  </section>
+
+  <section>
+    <h2>Why Now?</h2>
+    <div class="cards">
+      <div class="card pink-card">
+        <h3>Female Solo Travel</h3>
+        <p>The female solo travel market is growing rapidly.</p>
+      </div>
+      <div class="card pink-card">
+        <h3>Authentic Experiences</h3>
+        <p>Travelers increasingly seek authentic local experiences.</p>
+      </div>
+      <div class="card pink-card">
+        <h3>Rising Costs</h3>
+        <p>Rising accommodation costs make home exchange more attractive than ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="white-section">
+    <h2>For Stakeholders and Investors</h2>
+    <p>
+      HolidayMatch combines the emotional appeal of <em>The Holiday</em>, the proven demand for
+      home-sharing platforms, and the rapidly growing female solo travel market into one unique
+      travel experience.
+    </p>
+    <p>
+      The app responds to the growing demand for safe, community-driven and affordable travel
+      experiences designed specifically for women.
+    </p>
+  </section>
+
+  <footer id="cta">
+    <h2>Ready for Your Own Holiday Story?</h2>
+    <p>
+      Join the waitlist and be among the first women to experience travel inspired by
+      <em>The Holiday</em>.
+    </p>
+    <a href="#" class="button">Find Your Holiday Match Today</a>
+  </footer>
 
 </body>
 </html>
