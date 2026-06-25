@@ -128,15 +128,15 @@
       border-left: 6px solid #d85c8a;
       border-radius: 15px;
       box-shadow: 0 5px 18px rgba(0,0,0,0.05);
-    }
+      }
 
     .safety-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-      margin-top: 25px;
-      font-size: 18px;
-    }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+  font-size: 18px;
+}
 
     .safety-list div {
       background-color: white;
@@ -299,8 +299,8 @@
       <div>✔ Selfie Verification</div>
       <div>✔ Secure Messaging</div>
       <div>✔ Community Reviews</div>
-      <div>✔ Women-Only Membership</div>
-      <div>✔ Customer Support</div>
+      <div style="grid-column: 2;">✔ Women-Only Membership</div>
+      <div style="grid-column: 3;">✔ Customer Support</div>
     </div>
   </section>
 
